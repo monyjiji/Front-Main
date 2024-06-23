@@ -17,6 +17,11 @@ import CurrentAppointments from './pages/Doctors/CurrentAppointments';
 import HistoryAppointments from './pages/Doctors/HistoryAppointments';
 import ProfileDoc from './pages/Doctors/ProfileDoc';
 import PatProfile from './pages/Doctors/PatProfile';
+import Messages from './pages/Admin/Messages';
+import UsersList from './pages/Admin/UsersList';
+import Response from './pages/Admin/Response';
+import PatientsList from './pages/Doctors/PatientsList';
+import ContactUs from './pages/Admin/ContactUs';
 import './App.css';
 function App() {
   return (
@@ -34,18 +39,24 @@ function App() {
               <Route path="/patient/appointments" element={<PatientAppointments />}/>
               <Route path="/patient/profile" element={<PatientProfile />}/>
               <Route path="/patient/newapp" element={<PatientNewAppointment />}/>
-              <Route path="/patient/DocProfile" element={<DocProfile />}/>
-              <Route path="/patient/Booking" element={<Booking/>}/> 
+              <Route path="/patient/docprofile" element={<DocProfile />}/>
+              <Route path="/patient/booking" element={<Booking/>}/> 
               <Route path="/patient/signup" element={<PatientSignUp/>}/>
               <Route path="/doctor/signup" element={<DoctorSignUp/>}/>
               <Route path="/login" element={<LogIn />}/>
               <Route path="/doctor/login" element={<DoctorLogIn/>}/>
               <Route path="*" element={<Error />}/>
-              <Route path="/patient/Doctorlist" element={<DoctorList/>}/>
+              <Route path="/patient/doctorlist" element={<DoctorList/>}/>
               <Route path="/doctor/appointments" element={<CurrentAppointments/>}/>
               <Route path="/doctor/historyappointments" element={<HistoryAppointments/>}/>
-              <Route path="/doctor/ProfileDoc" element={<ProfileDoc/>}/>
-              <Route path="/doctor/PatProfile" element={<PatProfile/>}/>
+              <Route path="/doctor/profiledoc" element={<ProfileDoc/>}/>
+              <Route path="/doctor/patprofile" element={<PatProfile/>}/>
+              <Route path="/admin/messages" element={<Messages/>}/>
+              <Route path="/admin/userslist" element={<UsersList/>}/>
+              <Route path="/admin/response" element={<Response/>}/>
+              <Route path="/doctor/patientslist" element={<PatientsList/>}/>
+              <Route path="/admin/contactus" element={<ContactUs/>}/>
+            
             </Routes>
          </div>   
         <Footer />
